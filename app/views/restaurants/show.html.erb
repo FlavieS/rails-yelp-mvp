@@ -1,0 +1,7 @@
+<h1>Show</h1>
+<h1><%= @restaurant.name%></h1>
+<p><%= @restaurant.category%></p>
+<p><%= link_to "Back to list", restaurants_path %></p>
+<p><%= link_to "Delete this task", restaurant_path,
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
